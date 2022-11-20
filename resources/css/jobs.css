@@ -1,0 +1,22 @@
+#skills {
+    background-color:#9e7fa0;
+    padding: 0 16px;
+}
+#skills li {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#jobhistory {
+    margin-left: 40px;
+}
+
+@media screen and (min-width: 800px){
+    main {
+        flex-direction: row-reverse;
+    }
+    
+    #jobhistory {
+        width: calc(100vw - 300px);
+    }
+}
