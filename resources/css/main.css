@@ -1,0 +1,258 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************************************
+    FONTS
+*******************************************/
+@font-face {
+    font-family: "NotoSansSC Bold";
+    src: url("../fonts/NotoSansSC-Bold.otf");
+}
+
+@font-face {
+    font-family: "NotoSansSC Regular";
+    src: url("../fonts/NotoSansSC-Regular.otf");
+}
+
+p, li, a {
+    font-family: "NotoSansSC Regular";
+    font-weight: 300;
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "NotoSansSC Bold";
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0 0 24px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+@media screen and (min-width: 1200px){
+    p, li, a {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 62px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+}
+
+/******************************************
+    HEADER
+******************************************/
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #110918;
+    transition: 0.5s;
+}
+
+header a {
+    color: #f4eaff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header a:hover {
+    color: #ae92ef;
+}
+
+header .logo {
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header .logo:hover {
+    width: 250px;
+    height: 125px;
+}
+
+header .logo a {
+    display: block !important;
+}
+
+header a {
+    display: none;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header .icon {
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    header .icon {
+        display: none;
+    }
+
+    header a {
+        display: block;
+        font-size: 28px;
+    }
+
+    header {
+        flex-direction: row;
+        padding-left: 20px;
+    }
+}
+
+/******************************************
+    MAIN
+******************************************/
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4eaff;
+    position: relative;
+}
+
+
+/******************************************
+    FOOTER
+******************************************/
+
+footer {
+    background-color: #ae92ef;
+    color: #110918;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+
+.adress_box {
+    display: inline;
+}
+
+.adress_box p{
+    margin: 5px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer .icons {
+    display: flex;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+footer img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+/******************************************
+    GLOBAL CLASSES/ELEMENTS
+******************************************/
+
+.bordered_box {
+    border: solid 2px #110918;
+    padding: 20px;
+}
+
+.content_container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1200) {
+
+    .content_container {
+        padding: 40px;
+    }
+    
+}
+

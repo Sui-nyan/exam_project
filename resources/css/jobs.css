@@ -1,22 +1,66 @@
-#skills {
-    background-color:#9e7fa0;
-    padding: 0 16px;
+main>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#skills li {
+
+main>div>div:first-child {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1200px;
+}
+
+main>div>div:first-child>h2 {
+    align-self: flex-start;
+}
+
+main>div>div:first-child>div {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+main>div>div:first-child h4 {
+    margin: 0;
+}
+
+main>div>div:first-child span {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+main>div>div:nth-child(2) {
+    background-color:#907cbd;
+    padding: 20px 20px 150px;
+}
+
+main>div>div:nth-child(2) li {
     font-size: 18px;
     font-weight: 400;
 }
 
-#jobhistory {
-    margin-left: 40px;
-}
+@media screen and (min-width: 768px){
+    main>div {
+        flex-direction: row;
+        width: 100%;
+    }
 
-@media screen and (min-width: 800px){
-    main {
-        flex-direction: row-reverse;
+    main>div>div:first-child {
+        align-self: flex-start;
+        width: 100%;
+        margin: 0 40px;
     }
-    
-    #jobhistory {
-        width: calc(100vw - 300px);
+
+    main>div>div:nth-child(2) {
+        align-self: flex-start;
+        width: 200px;
+        flex-shrink: 0;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%); 
     }
+
 }

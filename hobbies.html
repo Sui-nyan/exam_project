@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="resources/css/index.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="resources/css/hobbies.css" media="screen">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="resources/scripts/jquery-3.6.1.min.js"></script>
+    <script src="resources/scripts/script.js"></script>
 
-    <title>Document</title>
+    <title>Hobbies</title>
 </head>
 
 <body>
     <header>
-        <figure>
-            <a href="index.html"><img src="resources/icons/placeholder-logo.png" alt="LOGO"></a>
+        <figure class="logo">
+            <a href="index.html"><img src="resources/icons/logo_cloud.png" alt="logo_cloud"></a>
+        </figure>
+        <figure id="menu_button" class="icon">
+            <img src="resources/icons/menu.png" alt="expand-menu">
         </figure>
 
-        <div><a href="job.html">工作经验</a></div>
+        <a href="job.html">工作经验</a>
 
-        <div><a href="education.html">教育背影</a></div>
+        <a href="education.html">教育背影</a>
 
-        <div><a href="hobbies.html">爱好</a></div>
-
-        <div><a href="contact.html">联系</a></div>
+        <a href="hobbies.html">爱好</a>
     </header>
 
     <main>
@@ -36,7 +36,7 @@
                 <a href="#music">音乐</a>
                 <figure><img src="resources/icons/musical-note.png" alt="musical-note"></figure>
             </div>
-            <div class="expandable">
+            <div>
                 <ul>
                     <li>唱歌</li>
                     <li>乐器</li>
@@ -48,7 +48,7 @@
                 <a href="#art">绘画</a>
                 <figure><img src="resources/icons/color-palette.png" alt="color-palette"></figure>
             </div>
-            <div class="expandable">
+            <div>
                 <ul>
                     <li>数字绘画</li>
                     <li>3D 模型</li>
@@ -56,44 +56,79 @@
             </div>
 
             <div class="reverse-row">
-                <a href="#games">游戏</a>
-                <figure><img src="resources/icons/console.png" alt="game console"></figure>
-            </div>
-            <div class="expandable">
-                <ul>
-                    <li>愿神</li>
-                    <li>Leaf Blower</li>
-                </ul>
+                <a href="#cooking">美食烹饪</a>
+                <figure><img src="resources/icons/stir-fry.png" alt="game console"></figure>
             </div>
         </nav>
         <div>
-            <div id="music">
-                <h2>音乐</h2>
+            <div id="music" class="bordered_box content_container">
+                <div class="h2-banner"><h2>音乐</h2></div>
                 <h3>唱歌</h3>
-                <p>鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础, 鉴于对人权的无视和侮蔑已发展为野蛮暴行,这些暴行玷污了人类的良心,而一个人人享有言论和信仰自由并免予恐惧和匮乏的世界的来临,已被宣布为普通人民的最高愿望, 鉴于为使人类不致迫不得已铤而走险对暴政和压迫进行反叛,有必要使人权受法治的保护,</p>
+                <p>在高中，我从六年级开始就参加了学校的合唱团。从八年级开始，合唱团有强制性的歌唱课程。
+                    我参加合唱团近6年了，一直把唱歌作为我的爱好之一。即使在今天，我仍然喜欢在空闲时间定期唱歌。
+                </p>
                 <h3>乐器</h3>
-                <p>鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础, 鉴于对人权的无视和侮蔑已发展为野蛮暴行,这些暴行玷污了人类的良心,而一个人人享有言论和信仰自由并免予恐惧和匮乏的世界的来临,已被宣布为普通人民的最高愿望, 鉴于为使人类不致迫不得已铤而走险对暴政和压迫进行反叛,有必要使人权受法治的保护,</p>
+                <p>我从五年级开始弹奏键盘，直到十年级转到钢琴课。如今，由于我不再拥有钢琴或键盘，我已经放弃了这些乐器。现在我最近又开始弹尤克里里琴。</p>
                 <h3>我听得歌</h3>
-                <p>鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础, 鉴于对人权的无视和侮蔑已发展为野蛮暴行,这些暴行玷污了人类的良心,而一个人人享有言论和信仰自由并免予恐惧和匮乏的世界的来临,已被宣布为普通人民的最高愿望, 鉴于为使人类不致迫不得已铤而走险对暴政和压迫进行反叛,有必要使人权受法治的保护,</p>
-
+                <p>在我的生活中，音乐一直对我很重要。除了演奏乐器和唱歌之外，我还经常听不同种类的音乐。请随时听一听下面我最喜欢的歌曲。</p>
+                <div class="image-container">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="200" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/harenchi/1585848047?i=1585848051"></iframe>
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="200" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/%E5%A6%82%E6%84%BF/1578206970?i=1578206973"></iframe>
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="200" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/indigo/1478261748?i=1478262082"></iframe>
+                </div>
             </div>
 
-            <div id="art">
-                <h2>绘画</h2>
+            <div id="art" class="bordered_box content_container">
+                <div class="h2-banner"><h2>绘画</h2></div>
                 <h3>数字绘画</h3>
-                <p>鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础, 鉴于对人权的无视和侮蔑已发展为野蛮暴行,这些暴行玷污了人类的良心,而一个人人享有言论和信仰自由并免予恐惧和匮乏的世界的来临,已被宣布为普通人民的最高愿望, 鉴于为使人类不致迫不得已铤而走险对暴政和压迫进行反叛,有必要使人权受法治的保护,</p>
+                <p>我一直非常热衷于艺术和绘画。我在小学时从传统绘画和素描开始，甚至上了大约3年的艺术课。
+                    七年级时，我开始在我的笔记本电脑上使用图形板进行数字绘画。现在，我几乎只在我的笔记本电脑或iPad上画画。我使用的绘画软件是 Procreate 和 Clip Studio Paint。
+                    我还和其他学生一起从事角色设计，作为一个副业。
+                </p>
+                    <div class="image-container">
+                        <figure>
+                            <img src="resources/pictures/Not-Tiger 2022-12-04 15_15_58.png" alt="Not-Tiger" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="resources/pictures/Xiao 2022-12-04 15_25_16.png" alt="Xiao" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="resources/pictures/character_sheet.png" alt="Character Design" loading="lazy">
+                        </figure>
+                    </div>
+                    
                 <h3>3D 模型</h3>
-                <p>鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础, 鉴于对人权的无视和侮蔑已发展为野蛮暴行,这些暴行玷污了人类的良心,而一个人人享有言论和信仰自由并免予恐惧和匮乏的世界的来临,已被宣布为普通人民的最高愿望, 鉴于为使人类不致迫不得已铤而走险对暴政和压迫进行反叛,有必要使人权受法治的保护,</p>
+                <p>我最近开始接触3D建模。使用 Blender，一个免费的建模软件，我已经创建了各种三维物体和人物。</p>
+                <div class="image-container">
+                    <figure>
+                        <img src="resources/pictures/Kodama.png 2022-12-04 15_20_26.png" alt="Kodama" loading="lazy">
+                    </figure>
+                    <video width="300px" height="300px" muted controls>
+                        <source src="resources/pictures/finalMovie 2022-12-15 20_31_47.mp4">
+                    </video>
+                    <figure>
+                        <img src="resources/pictures/Kodama_poster 2022-12-04 15_23_35.png" alt="Kodama_poster" loading="lazy">
+                    </figure>
+                </div>       
 
             </div>
 
-            <div id="games">
-                <h2>游戏</h2>
-                <h3>愿神</h3>
-                <p>鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础, 鉴于对人权的无视和侮蔑已发展为野蛮暴行,这些暴行玷污了人类的良心,而一个人人享有言论和信仰自由并免予恐惧和匮乏的世界的来临,已被宣布为普通人民的最高愿望, 鉴于为使人类不致迫不得已铤而走险对暴政和压迫进行反叛,有必要使人权受法治的保护,</p>
-                <h3>Leaf Blower</h3>
-                <p>鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础, 鉴于对人权的无视和侮蔑已发展为野蛮暴行,这些暴行玷污了人类的良心,而一个人人享有言论和信仰自由并免予恐惧和匮乏的世界的来临,已被宣布为普通人民的最高愿望, 鉴于为使人类不致迫不得已铤而走险对暴政和压迫进行反叛,有必要使人权受法治的保护,</p>
-
+            <div class="bordered_box content_container">
+                <div id="cooking" class="h2-banner"><h2>美食烹饪</h2></div>
+                <h3>我喜欢做的菜</h3>
+                <p>食物一直是我非常热衷的活动。我喜欢为家人和朋友做饭，喜欢与大家分享。对我来说，为别人做饭是为了给他们带来快乐，表达我的爱意。</p>
+                <p>作为一个在亚洲家庭长大的人。亚洲菜肴一直是我的安慰食品。</p>
+                <div class="image-container">
+                    <figure>
+                        <img src="resources/pictures/food1.jpg" alt="Food" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="resources/pictures/food2.jpg" alt="Food" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="resources/pictures/food3.jpg" alt="Food" loading="lazy">
+                    </figure>
+                </div>
             </div>
         </div>
 
@@ -106,20 +141,21 @@
         </div>
         <div>
             <div class="icons">
-                <figure>
+                <figure class="icon">
                     <a href="https://github.com/peanutted" target="_blank" rel="noopener"><img src="resources/icons/github.png" alt="GitHub Icon"></a>
                 </figure>
-                <figure>
+                <figure class="icon">
                     <a href="https://www.instagram.com/eli_nyan/" target="_blank" rel="noopener"><img src="resources/icons/instagram.png" alt="Instagram Icon"></a>
                 </figure>
-                <figure>
+                <figure class="icon">
                     <a href="https://www.pinterest.de/nomo321/" target="_blank" rel="noopener"><img src="resources/icons/pinterest.png" alt="pinterest Icon"></a>
+                </figure>
+                <figure class="icon">
+                    <a href="https://open.spotify.com/user/nomo321" target="_blank" rel="noopener"><img src="resources/icons/spotify.svg" alt="Spotify Icon"></a>
                 </figure>
             </div>
         </div>
     </footer>
-    <script src="resources/scripts/jquery-3.6.1.min.js"></script>
-    <script src="resources/scripts/script.js"></script>
 </body>
 
 </html>

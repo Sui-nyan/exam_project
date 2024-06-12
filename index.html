@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 
 <head>
     <meta charset="UTF-8">
@@ -7,32 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Idk what i'm doing here">
 
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="resources/css/index.css" media="screen"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <title>index</title>
+    <title>Elisa Zhang</title>
+
+    <script type="text/javascript" src="resources/scripts/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="resources/scripts/script.js"></script>
 </head>
-
 
 <body>
     <header>
-        <figure>
-            <a href="index.html"><img src="resources/icons/placeholder-logo.png" alt="LOGO"></a>
+        <figure class="logo">
+            <a href="index.html"><img src="resources/icons/logo_cloud.png" alt="logo_cloud"></a>
+        </figure>
+        <figure id="menu_button" class="icon">
+            <img src="resources/icons/menu.png" alt="expand-menu">
         </figure>
 
-        <div><a href="job.html">工作经验</a></div>
+        <a href="job.html">工作经验</a>
 
-        <div><a href="education.html">教育背影</a></div>
+        <a href="education.html">教育背影</a>
 
-        <div><a href="hobbies.html">爱好</a></div>
-
-        <div><a href="contact.html">联系</a></div>
+        <a href="hobbies.html">爱好</a>
     </header>
 
     <main>
-
+        <figure class="img_banner">
+            <img src="resources/pictures/banner_purple.gif" alt="my_banner">
+        </figure>
+        <div id="my_introduction" class="bordered_box">
+            <figure>
+                <img src="resources/pictures/profilepic.jpg" alt="Me">
+            </figure>
+            <h1>张玉婷</h1>
+            <p>学生 | 德国，斯图加特</p>
+            <p>你好，我是张玉婷！上斯图加特的媒体大学学生。</p>
+        </div>
+        <div class="cloud">
+            <div class="content_container">
+                <h4>作为一个兴趣丰富的人，我渴望在一个领域工作，在那里我可以利用我所有的技能。无论是编程、艺术还是音乐。</h4>
+                <p>我喜欢在一个多元化的工作环境中工作，在那里我能通过不同的任务来挑战自己。
+                在团队中工作对我来说没问题，因为我有一些在快节奏的工作场所与一个充满活力的年轻团队工作的经验。</p>
+            </div>
+            <div id="contact_box">
+                <h3>联系我</h3>
+                <div>
+                    <div>
+                        <p>ez018@hdm-stuttgart.de</p>
+                        <p>+49 175 4455331</p>
+                    </div>
+                    <div>
+                        <p>Schmale Gasse 1</p>
+                        <p>71139 Ehningen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <figure class="img_banner">
+            <img src="resources/pictures/banner_purple.gif" alt="banner_purple">
+        </figure>
     </main>
 
     <footer>
@@ -41,19 +75,21 @@
         </div>
         <div>
             <div class="icons">
-                <figure>
+                <figure class="icon">
                     <a href="https://github.com/peanutted" target="_blank" rel="noopener"><img src="resources/icons/github.png" alt="GitHub Icon"></a>
                 </figure>
-                <figure>
+                <figure class="icon">
                     <a href="https://www.instagram.com/eli_nyan/" target="_blank" rel="noopener"><img src="resources/icons/instagram.png" alt="Instagram Icon"></a>
                 </figure>
-                <figure>
+                <figure class="icon">
                     <a href="https://www.pinterest.de/nomo321/" target="_blank" rel="noopener"><img src="resources/icons/pinterest.png" alt="pinterest Icon"></a>
+                </figure>
+                <figure class="icon">
+                    <a href="https://open.spotify.com/user/nomo321" target="_blank" rel="noopener"><img src="resources/icons/spotify.svg" alt="Spotify Icon"></a>
                 </figure>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

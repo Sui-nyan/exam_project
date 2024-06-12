@@ -1,88 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="resources/css/index.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="resources/css/jobs.css" media="screen"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="resources/scripts/jquery-3.6.1.min.js"></script>
+    <script src="resources/scripts/script.js"></script>
 
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <figure>
-            <a href="index.html"><img src="resources/icons/placeholder-logo.png" alt="LOGO"></a>
+        <figure class="logo">
+            <a href="index.html"><img src="resources/icons/logo_cloud.png" alt="logo_cloud"></a>
+        </figure>
+        <figure id="menu_button" class="icon">
+            <img src="resources/icons/menu.png" alt="expand-menu">
         </figure>
 
-        <div><a href="job.html">工作经验</a></div>
+        <a href="job.html">工作经验</a>
 
-        <div><a href="education.html">教育背影</a></div>
+        <a href="education.html">教育背影</a>
 
-        <div><a href="hobbies.html">爱好</a></div>
-
-        <div><a href="contact.html">联系</a></div>
+        <a href="hobbies.html">爱好</a>
     </header>
 
     <main>
-        <div id="jobhistory">
-            <h2>工作经验</h2>
+        <div>
             <div>
-                <h3>Dalley IT</h3>
-                <h4>兼职</h4>
-                <p>10/2022 - </p>
+                <h2>工作经验</h2>
+                <div class="bordered_box content_container">
+                    <h3>Dalley IT</h3>
+                    <h4>前端开发员<span> 10/2022 - 如今</span></h4> 
+                    <p>我的主要任务是实施网站的既定设计。我使用一个名为CONTAO的内容管理系统，主要使用 SCSS、HTML、JS 和 PHP。</p>
+                </div>
+                <div class="bordered_box content_container">
+                    <h3>Apple Retail</h3>
+                    <h4>技术人员<span> 07/2021 - 09/2022</span></h4> 
+                    <p>作为一名零售工人，我的工作当然涉及与顾客的大量交谈。我负责帮助解决顾客在使用 iPhone、iPad和耳机时遇到的问题。 在团队中工作和对iOS硬件的良好理解是这项工作的重要能力。</p>
+                </div>
+                <div class="bordered_box content_container">
+                    <h3>East Garden Restaurant</h3>
+                    <h4>跑堂<span> 11/2019 - 02/2019</span></h4> 
+                    <p>在餐厅工作需要与顾客交谈，并确保他们在用餐期间有一个愉快的逗留。发放饮料和食物，接受订单并保持一切清洁，这些都是我在这份工作中要做的事情。</p>
+                </div>
+                <div class="bordered_box content_container">
+                    <h3>Mercedes Benz AG</h3>
+                    <h4>物流工作 (暑期工)<span> 07/2018 - 08/2018</span></h4> 
+                    <p>作为在奔驰公司物流部门工作的一项要求，我必须取得叉车执照。虽然，工作本身并不要求我使用叉车工作。我的任务是整理出组装汽车零件所需的正确工具，并把它们组装起来。</p>
+                </div>
             </div>
             <div>
-                <h3>Apple Retail</h3>
-                <h4>技术人员</h4>
-                <p>07/2021 - 09/2022</p>
-            </div>
-            <div>
-                <h3>East Garden Restaurant</h3>
-                <h4>兼职</h4>
-                <p>11/2019 - 02/2019</p>
-            </div>
-            <div>
-                <h3>Mercedes Benz AG</h3>
-                <h4>物流工作 (暑期工)</h4>
-                <p>07/2018 - 08/2018</p>
-            </div>
-        </div>
-        <div id="skills">
-            <div>
-                <h2>技能</h2>
-                <ul>
-                    <li>电脑语言</li>
-                    <p>JAVA, C#, HTML/CSS, JavaScript, Bash/Shell, PHP</p>
-                    <li>数据库</li>
-                    <p>Oracle DB, Microsoft SQL Server</p>
-                    <li>Entwicklungsumgebung</li>
-                    <p>IntelliJ, Visual Studio Code, Unity 3D</p>
-                    <li>Frameworks</li>
-                    <p>React, </p>
-                    <li>语言</li>
-                    <p>中文 (母语), 德文 (母语), 英文 (流利), 法语 (基础), 日语
-                        (基础)</p>
-                </ul>
-            </div>
-    
-            <div>
-                <h2>软件技术</h2>
-                <ul>
-                    <li>Blender</li>
-                    <li>Microsoft Suite</li>
-                    <li>Adobe After Effects</li>
-                    <li>Figma</li>
-                    <li>Clip Studio Paint</li>
-                    <li>Procreate</li>
-                </ul>
+                <div>
+                    <h2>技能</h2>
+                    <ul>
+                        <li>电脑语言</li>
+                        <p>JAVA, C#, HTML/CSS, JavaScript, Bash/Shell, PHP, Phython, C/C++</p>
+                        <li>数据库</li>
+                        <p>Oracle DB, Microsoft SQL Server</p>
+                        <li>框架</li>
+                        <p>React</p>
+                        <li>语言</li>
+                        <p>中文 (母语), 德文 (母语), 英文 (流利), 法语 (基础), 日语 (基础)</p>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h2>软件技术</h2>
+                    <ul>
+                        <li>Blender</li>
+                        <li>Microsoft Suite</li>
+                        <li>Adobe After Effects</li>
+                        <li>Figma</li>
+                        <li>Clip Studio Paint</li>
+                        <li>Procreate</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -94,14 +93,17 @@
         </div>
         <div>
             <div class="icons">
-                <figure>
+                <figure class="icon">
                     <a href="https://github.com/peanutted" target="_blank" rel="noopener"><img src="resources/icons/github.png" alt="GitHub Icon"></a>
                 </figure>
-                <figure>
+                <figure class="icon">
                     <a href="https://www.instagram.com/eli_nyan/" target="_blank" rel="noopener"><img src="resources/icons/instagram.png" alt="Instagram Icon"></a>
                 </figure>
-                <figure>
+                <figure class="icon">
                     <a href="https://www.pinterest.de/nomo321/" target="_blank" rel="noopener"><img src="resources/icons/pinterest.png" alt="pinterest Icon"></a>
+                </figure>
+                <figure class="icon">
+                    <a href="https://open.spotify.com/user/nomo321" target="_blank" rel="noopener"><img src="resources/icons/spotify.svg" alt="Spotify Icon"></a>
                 </figure>
             </div>
         </div>

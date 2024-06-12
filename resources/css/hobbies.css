@@ -1,25 +1,31 @@
 main {
-    flex-direction: row;
+    flex-direction: column;
+    background-image: url("../pictures/backgroundCook.jpg");
 }
 
 nav {
     position: sticky;
     align-self: flex-start;
-    background-color:#9e7fa0;
-    height: 100vh;
-    width: 180px;
-    padding: 16px 0;
+    background-color:#907cbd;
+    height: 100px;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 nav a {
-    font-size: 32px;
+    font-size: 20px;
     text-decoration: none;
-    color: #4c395e;
+    color: #110918;
     transition: color 0.5s;
+    margin: 0;
 }
 
 nav a:hover {
-    color: #000000;
+    color: #ae92ef;
 }
 
 nav li {
@@ -28,8 +34,7 @@ nav li {
 
 .reverse-row {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -44,36 +49,125 @@ nav img {
     object-fit: cover;
 }
 
-/*.expandable {
-    
-}*/
-
-.expandable li:not(first-child) {
-    margin-top: 5px;
+ul {
+   display: none; 
 }
+
 
 main>div {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-}
-
-main>div>div {
-    margin: 20px 10px;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
-    border: solid 2px black;
+    justify-content: space-around;
+    width: 100%;
 }
 
+.content_container {
+    background-color: #f4eaff;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container figure {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+}
+
+.h2-banner {
+    background-color: #4c395e;
+    color: #f4eaff;
+    width: max-content;
+    position: relative;
+    border-radius: 0px 45px;
+    left: -35px;
+    padding: 5px 20px 5px 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    ul {
+        display: block;
+    }
+
+    nav {
+        top: 0;
+        display: block;
+        width: 200px;
+        height: 100%;
+        padding: 20px 10px 150px;
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+
+    .reverse-row {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+
+    iframe {
+        max-width: 300px;
+    }
+
+    .image-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image-container figure {
+        max-width: 300px;
+    }
+
+    video {
+        max-width: 300px;
+    }
+
+}
 
 /******************************************
     DESKTOP VIEW
 *******************************************/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     nav {
-        top: 0;
+        width: 200px;
     }
+
+    nav a {
+        font-size: 26px;
+    }
+
     main>div {
-        width: calc(100vw - 180px);
+        gap: 40px;
+        margin: 40px;
+    }
+
+    iframe {
+        width: 300px;
     }
 }

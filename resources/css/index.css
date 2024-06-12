@@ -1,128 +1,112 @@
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    font-family: 'Noto Sans SC', sans-serif;
-}
-
-/*******************************************
-    FONTS
-*******************************************/
-
-p, li, a {
-    font-weight: 300;
-    font-size: 16px;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 32px;
-    margin: 16px 0;
-}
-
-h3, legend {
-    font-weight: 500;
-    font-size: 22px;
-    margin: 8px 0;
-}
-
-
-
-/******************************************
-    HEADER
-******************************************/
-
-header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 25px 50px 25px 30px;
-    background-color: #4c395e;
-}
-
-header a {
-    color: rgb(249, 240, 255);
-    font-size: 32px;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-header a:hover {
-    color: #b39db3;
-}
-
-header figure {
-    width: 100px;
-    height: 100px;
+#my_introduction {
     position: absolute;
+    top: 20px;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    padding: 20px;
 }
 
-header img {
+#my_introduction figure {
+    width: 200px;
+    height: 200px;
+}
+
+#my_introduction p:nth-child(4) {
+    font-weight: bold;
+}
+
+.cloud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    margin: -5px 0;
+    background-repeat: repeat-x;    
+    background-size: contain;
+    background-image: url("../pictures/cloud.png"),
+            linear-gradient(180deg, rgba(208,126,255,1) 0%, rgba(151,126,255,1) 50%, rgba(126,147,255,1));
 }
 
+.content_container {
+    text-align: center;
+}
 
-/******************************************
-    MAIN
-******************************************/
+#contact_box {
+    margin: 0 20px;
+    width: 50%;
+    min-height: 260px; 
+    display: flex;
+    flex-direction: column;
+}
 
-body {
+#contact_box>div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#contact_box>div::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+}
+
+#contact_box>div>div {
+    display: inline;
+}
+
+.img_banner {
+    width: 100%;
+    height: 600px;
     margin: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(to right, #b39db3,#9e7fa0);
-}
+@media screen and (min-width: 768px) {
+    #contact_box {
+        width: 33%;
+    }
 
+    #contact_box h3 {
+        align-self: center;
+    }
 
-/******************************************
-    FOOTER
-******************************************/
-
-footer {
-    background-color: #3d3f57;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 120px;
-}
-
-@media screen and (min-width: 800px) {
-    footer {
+    #contact_box>div {
         flex-direction: row;
+        gap: 40px;
+    }
+
+    #contact_box>div::after {
+        width: 1px;
+        height: 100%;
+        left: 50%;
+        top: auto;
     }
 }
 
-footer div {
-    display: flex;
-    align-items: center;
+
+@media screen and (min-width: 1200px) {
+    #my_introduction {
+        top: 40px;
+    }
+
+    #my_introduction figure {
+    width: 300px;
+    height: 300px;
+    }
+
+    .img_banner {
+        width: 100%;
+        height: 800px;
+        margin: 0;
+    }
 }
 
-footer .icons {
-    display: flex;
-}
-
-footer figure {
-    width: 30px;
-    height: 30px;
-    margin: 20px;
-}
-
-footer img {
-    width: 100%;
-}
